@@ -1,0 +1,21 @@
+For this assignment what I have completed is that:
+Draw 5 different penguins in 3d space which includes line only penguin, all white penguin, white penguin with line, matellic penguin and matte penguin.
+
+Penguin is displayed by drawing head,topbeek,botbeek,body,leftarm,lefthand, rightarm,righthand, both legs and both feet.
+Head can rotate around y-axis centered at top of the body.
+Botbeek can move up and down.
+Both arm can rotate 3 directions and hand can rotate around x-axis.
+Both two legs can rotate 3 directions and feet can rotate around z-axis.
+
+Every face has an associated normal drawn to it.
+
+WIREFRAME draws a penguin with only lines.
+SOILD draws a white penguin.
+OUTLINE draws a white penguin with lines.
+Matte  draws a not shinny penguin consider light.
+Matellic draws a shinny penguin consider light.
+
+
+The light is setting up far away from the penguin with y =1 and radius is 1 with x^2+z^2=1 which means 180 degrees rotate around the penguin.
+
+Keyframe animation is changed by using updateKeyframe in order to show a rotating penguin and a regular moving penguin. 

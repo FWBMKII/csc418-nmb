@@ -1,0 +1,15 @@
+Part B
+(a) The penguin is consist by 7 kinds of hexahedron. To draw each polygon, there is a function called "draw<PART>()", that is to draw the hexahedron represent the <PART> of body. All <PART> are: body, arm, hand, head, mouth, leg, foot. All these functions are called in function "drawPenguin(int i)", which is to draw a penguin. Input parameter represent the color of the penguin: if i == 0, then draw colored penguin. if i == 1, then draw a black penguin. For each parts of the penguin's body, it is set to be able to move or rotate by corresponding domain of freedom stored in joint_ui_data. There are totally 24 degrees of freedom(DOFs) and each DOF can be changed by a control spinner in right side controller pannel.
+
+(b) Three basic polygon render styles are implemented. User can switch the render style by bullet box in right down side controller pannel:
+	- Wireframe: Wireframe is implemented by change glPolygonMode to GL_LINE before drawing the penguin. 
+	- Solid: Solid is implemented by change glPolygonMode to GL_FILL and enable the openGL depth test before drawing the penguin.
+	- Outlined: Outlined is consisted by two parts: The first part is to change rendring to solid and draw the penguin. The second part is to change rendering to line and draw a black penguin.
+
+(c) Two material render styles are implemented. Each material is implemented by changing the GL_AMBIENT, GL_DIFFUSE and GL_SPECULAR and let the penguin looks like in different material. User can switch the render style by bullet box in right down side controller pannel.
+
+(d) The light source has changable position. The movement of the light source is a circle parallel to the xy-plain from a infinite far distance (change the last parameter of GL_POSITION to be 0). The movement of light is controled by a global variable "Light". User can control it in the right side controller pannel.
+
+(e) void updateKeyframeButton(int) is implemented by the discription of comments. User can update or load keyframes in the downside controller pannel. After a series of keyframes are setted, the keyframe data in a keyframe to that in another keyframe so that penguin can animate as defined.
+
+(f) Catmull-Rom interpolation is implemented instead of original linear interpolation. penguin can animate more smoothly through each keyframe.

@@ -1,0 +1,25 @@
+The penguin is consisted of four regions:
+	0. basic matrix
+	The lowest matrix that contains all the shapes of penguin. 
+	1. body region:
+	body is represented by a green hexagon which upper half is three times higher than its lower half. A yellow trapezoid is on the body as wing of the penguin. Connect point between wing and body is set as a blue circle.
+	2. left leg region:
+	This region is located at the left down side of the body region, visually connected with body part by a blue circle.Left leg region is consisted of two linked rectangles. The higher-red rectangle is the leg and the lower-purple rectangle. two rectangles are connected with another blue circle.
+	3. right leg region:
+	This region is located at the right down side of the body region, visually connected with body part by a blue circle.Right leg region is consisted of two linked rectangles. The higher-red rectangle is the leg and the lower-purple rectangle. two rectangles are connected with another blue circle.
+	4. Head region:
+	This region is located at the up side of the body region. Visually connected with body part by a blue circle. Head is a gray pentagon. At the left up side of the head, eye is represented as two circles, one black one white, with different radius and the same center. Mouth is at the left of the head, consisted of two yellow right angle trapezoidal.
+
+When animate box is checked, then some parts in different region of the penguin would start their own animation:
+	0. basic matrix:
+	Translate with joint in this matrix results the penguin can move horizontally and vertically. So that the penguin looks like running from one side to another side of the window.
+	1. body region:
+	Wing would rotate from -45 degree to 45 degree by the blue circle.
+	2. left leg region:
+	The whole this region would rotate by blue circle on body region. At the same time, the foot par would also rotate by another blue circle on the leg. so that it looks like the leg swinging.
+	3. right leg region:
+	Similar with the left leg. Inital rotate direction diss opposite of the left leg so that whole two leg looks like running.
+	4. Head region:
+	The penguin would shake its head as moving. The mouth of the penguin would open and close so that it looks like the it is calling while running.
+
+Totally nine joints are used to complete the animation of the whole penguin. Two in basic matrix, one in body region, two in left leg region, two in right leg region and two in head region.
